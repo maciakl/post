@@ -13,14 +13,25 @@ There are couple of options available:
       -v, --version    Print version information
       -h, --help       Print this message and exit
       -u, --url        URL to upload file to (default: https://0x0.st)
+      -p, --proxy      HTTP proxy to use (eg. http://user:pass@host:port)
 
-Please make sure you specify the options before the filename.
+Please make sure you specify the options **before** the filename.
+
+Examples:
+
+    post file.jpg
+    post -u https://httpbin.org/post file.jpg
+    post -u https://httpbin.org/post -p https://proxy.example.com:1337 file.jpg
 
 ## Installing
 
 Install via go:
  
     go install github.com/maciakl/post@latest
+
+On Linux or Mac, use [grab](https://github.com/maciakl/grab)
+
+    grab maciakl/post
 
 On Windows, this tool is distributed via `scoop` (see [scoop.sh](https://scoop.sh)).
 
