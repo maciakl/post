@@ -1,4 +1,5 @@
 post
+test
 post*.exe
 post.zip
 post.tgz
@@ -6,3 +7,5 @@ post_*.zip
 post_*.tgz
 test.txt
 dorf.jpg
+# Added by goreleaser init:
+dist/
